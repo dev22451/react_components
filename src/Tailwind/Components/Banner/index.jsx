@@ -1,6 +1,6 @@
-import { NavBar, Navbar } from "../NavBar";
+import { NavBar } from "../NavBar";
 
-export const Banner = (props) => {
+export const TailwindBanner = (props) => {
   const { backgroundImage, title } = props;
 
   return (

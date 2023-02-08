@@ -72,13 +72,13 @@ export const NavBar = () => {
               />
             </button>
             <Drawer
-                title={
-                  <img
-                    src={NavBarLogo}
-                    alt="TamkinLogo"
-                    className="w-32 h-auto"
-                  />
-                }
+              title={
+                <img
+                  src={NavBarLogo}
+                  alt="TamkinLogo"
+                  className="w-32 h-auto"
+                />
+              }
               // headerStyle="display:none"
               className="customeDrower"
               placement="right"

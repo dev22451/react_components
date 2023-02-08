@@ -1,6 +1,6 @@
 import React from "react";
-import {  ScrollToTopArrow } from "../../assets";
-import useDocumentScrollThrottled from "../../helper/useDocumentScrollThrottled";
+import { ScrollToTopArrow } from "../../assets";
+import useDocumentScrollThrottled from "../helper/useDocumentScrollThrottled";
 
 const ScrollButton = () => {
   useDocumentScrollThrottled((callbackData) => {
@@ -15,8 +15,7 @@ const ScrollButton = () => {
     <a href="#">
 
     <div
-      className="fixed hidden bottom-5 right-6 bg-primary rounded-md backdrop-blur	"
-      id="scroll_button"
+      className="fixed  bottom-5 right-6 bg-primary rounded-md backdrop-blur	"
     >
       <div className=" bg-transparent flex justify-center items-center py-[25px] px-[20px] m-auto">
           <img src={ScrollToTopArrow} alt="scroll" className="w-[25px] h-[20px]" />

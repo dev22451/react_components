@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "../assets";
+import { Facebook, Instagram, Linkedin, Twitter } from "../../assets";
 
 export const AbouLinks = [
     {

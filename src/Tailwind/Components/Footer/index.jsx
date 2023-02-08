@@ -1,7 +1,7 @@
 import React from "react";
 import { NavBarLogo } from "../../assets";
-import { SocialIcons } from "../../constant";
-import { AbouLinks, GetStarted, HowitWorks } from "../../constant";
+import { AbouLinks, GetStarted, HowitWorks, SocialIcons } from "../constant";
+import ScrollButton from "../ScrollButton";
 
 export const Footer = (props) => {
   const { backgroundColor, backgroundImage } = props;
@@ -10,11 +10,11 @@ export const Footer = (props) => {
     <div>
       <div className="w-full border-t-[10px] border-solid  border-primary ">
         <footer
-          className={`bg-${backgroundColor} opacity-100 w-full text-white`}
+          className={`bg-${backgroundColor} opacity-100 w-full text-white `}
         >
           <div className=" ">
             <div
-              style={{ backgroundImage: `url(${backgroundImage})` }}
+              style={{backgroundImage:`url(${backgroundImage})`}}
               className="xl:w-[75%] xxs:w-[90%]  bg-no-repeat bg-cover bg-center m-auto"
             >
               <div className="grid lg:grid-cols-4 xxs:grid-cols-1 md:gap-3 md:grid-cols-2 xxs:gap-4 md:py-24  xxs:pd-0 xxs:py-8 ">
@@ -22,7 +22,7 @@ export const Footer = (props) => {
                   <div className="lg:h-28 xxs:h-28">
                     <a href="/">
                       <div className="w-56">
-                        <img src={NavBarLogo} alt="tamkinlogo" />
+                        <img src={NavBarLogo} alt="NavBarLogo" />
                       </div>
                     </a>
                   </div>

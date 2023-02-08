@@ -1,22 +1,40 @@
-import './App.css';
-import { NavBar } from './Components/NavBar';
-import { Banner, BasicBanner, Footer } from './Components';
-import { BannerBg } from './assets';
-import ScrollButton from './Components/ScrollButton';
+import "./App.css";
+import { NavBar } from "./StyledComponents/Components/NavBar";
+import { BasicBanner, Button, Footer } from "./Tailwind/Components";
+import { BannerBg } from "./Tailwind/assets";
+import ScrollButton from "./Tailwind/Components/ScrollButton";
+import {
+  Dropdown,
+  DropdownMenu,
+} from "./StyledComponents/Components/DropdownMenu";
+import { useState } from "react";
+import { Banner } from "./StyledComponents/Components";
+import { ContactBg } from "./assets";
+import { TailwindBanner } from "./Tailwind/Components";
 
 function App() {
+  const [choice, setChoice] = useState("");
+  console.log(choice, "choice");
   return (
-    <div className="App">
-     {/* <BasicBanner title="Home"/> */}
-     {/* <Banner backgroundImage={BannerBg}/> */}
+    <div className="App text-2xl font-bold">
+      {/* <BasicBanner title="Home"/>
+     <Banner backgroundImage={BannerBg}/>
 
-    
-     {/* <Footer backgroundColor="black" 
+    <Button backgroundColor="black"
+    ButtonText="discover"
+
+    />
+     <Footer backgroundColor="black" 
      backgroundImage={BannerBg}
-     
-      />
-      <ScrollButton/> */}
-      React Components
+     /> */}
+      <DropdownMenu setChoice={setChoice} choice={choice} />
+      {/* <NavBar/> */}
+      {/* <NavBar/> */}
+      {choice === "Tailwind" ? (
+        <TailwindBanner bg={BannerBg} title="Tailwind Contact" />
+      ) : (
+        <Banner imgUrl={ContactBg} title="Styled Contact" />
+      )}
     </div>
   );
 }
